@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "es2020",
+    "jsx": "react-jsx",
+    "lib": ["dom", "esnext"],
+    "rootDir": ".",
+    "module": "system",
+    "moduleResolution": "node",
+    "types": ["node", "jest"],
+    "allowJs": false,
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "useUnknownInCatchVariables": false,
+    "importHelpers": true,
+    "noEmitOnError": false,
+    "preserveConstEnums": true,
+    // DONT DO THIS so jsdoc will remain
+    "removeComments": false,
+    "sourceMap": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "preserveSymlinks": true,
+    "skipLibCheck": true,
+    "paths": { "@/*": ["./*"] }
+  },
+  "exclude": ["_", "node_modules"],
+  "typeAcquisition": { "enable": true }
+}

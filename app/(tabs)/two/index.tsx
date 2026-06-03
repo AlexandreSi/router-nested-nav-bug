@@ -1,19 +1,20 @@
 import { Pressable, StyleSheet } from "react-native";
 
+import EditScreenInfo from "@/components/EditScreenInfo";
 import { Text, View } from "@/components/Themed";
 import { useRouter } from "expo-router";
 
-export default function TabOneScreen() {
+export default function TabTwoScreen() {
   const router = useRouter();
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
+      <Text style={styles.title}>Tab Two</Text>
       {[1, 2, 3].map((itemId) => (
         <Pressable
           key={itemId}
           onPress={() => router.push(`/(tabs)/two/${itemId}`)}
         >
-          <Text>Go to nested item {itemId}</Text>
+          <Text>Go to item {itemId}</Text>
         </Pressable>
       ))}
     </View>
